@@ -1,0 +1,43 @@
+{
+  "name": "react-exercises",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "webpack-dev-server --open --port 4000 --compress --mode development",
+    "prebuild": "rimraf dist",
+    "build": "webpack --mode production --progress",
+    "prestats": "webpack --profile --json > stats.json",
+    "stats": " webpack-bundle-analyzer stats.json dist",
+    "serve": "serve dist"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "@material-ui/icons": "^4.5.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "recompose": "^0.30.0",
+    "video.js": "7.6.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-import": "^1.13.0",
+    "html-webpack-plugin": "^4.0.0-beta.11",
+    "rimraf": "^3.0.0",
+    "serve": "^11.2.0",
+    "standard": "^14.3.1",
+    "webpack": "^4.41.4",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
