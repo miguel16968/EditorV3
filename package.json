@@ -1,12 +1,12 @@
 {
-  "name": "react-exercises",
+  "name": "educast-editor",
   "version": "1.0.0",
-  "license": "MIT",
-  "main": "dist/main.js",
+  "description": "Um video editor",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --open --port 4000 --compress --mode development",
     "prebuild": "rimraf dist",
     "build": "webpack --mode production --progress",
+    "start": "webpack-dev-server --open --port 4000 --compress --mode development",
     "prestats": "webpack --profile --json > stats.json",
     "stats": " webpack-bundle-analyzer stats.json dist",
     "serve": "serve dist"
@@ -14,10 +14,12 @@
   "dependencies": {
     "@material-ui/core": "^4.8.0",
     "@material-ui/icons": "^4.5.1",
+    "html-webpack-plugin": "3.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "recompose": "^0.30.0",
-    "video.js": "7.6.6"
+    "video.js": "7.6.6",
+    "webpack": "4.41.5"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -36,6 +38,10 @@
     "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguel16968/EditorV3.git"
   },
   "standard": {
     "parser": "babel-eslint"
