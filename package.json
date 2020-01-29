@@ -1,5 +1,5 @@
 {
-  "name": "educast-editor",
+  "name": "educastEditor",
   "version": "1.0.0",
   "description": "Um video editor",
   "main": "dist/index.js",
